@@ -1,0 +1,1994 @@
+{
+    "_id": "5aaf506be0dfcfa852b7bf43",
+    "uuid": "f908def1-5dcf-48dc-8bd9-d1235a243a6f",
+    "nodeRedID": "4e1450da.325eb",
+    "email": "dev-mode",
+    "nldsJson": {
+        "layers": [
+            {
+                "layer_name": "ImageData_77935ab7",
+                "layer_id": "77935ab7.93b4b4",
+                "layer_type": "ImageData",
+                "layer_params": {
+                    "data_source": "Custom",
+                    "rows": 256,
+                    "cols": 256,
+                    "channels": 3,
+                    "classes": 10,
+                    "dbformat": "Python Pickle",
+                    "batchsize": 16,
+                    "train_dataset": "./data/imagenet10_train_cl.pkl",
+                    "test_dataset": "./data/imagenet10_test_cl.pkl",
+                    "val_dataset": "./data/imagenet10_test_cl.pkl",
+                    "test_split": 0,
+                    "validation_split": null,
+                    "dim_ordering": "channels_last"
+                }
+            },
+            {
+                "layer_name": "block0_conv1",
+                "layer_id": "85ee6bac.a21639",
+                "layer_type": "Convolution2D",
+                "layer_params": {
+                    "nb_filter": 64,
+                    "kernel_row": 7,
+                    "kernel_col": 7,
+                    "stride_row": 2,
+                    "stride_col": 2,
+                    "border_mode": "same",
+                    "init": "glorot_normal",
+                    "bias": 0,
+                    "trainable": true,
+                    "W_constraint": "null",
+                    "W_regularizer": "null",
+                    "W_lr_mult": 1,
+                    "w_decay_mult": 1,
+                    "b_constraint": "null",
+                    "b_regularizer": "null",
+                    "b_lr_mult": 1,
+                    "b_decay_mult": 1,
+                    "activity_regularizer": "null"
+                }
+            },
+            {
+                "layer_name": "block0_relu1",
+                "layer_id": "70535737.955359",
+                "layer_type": "ReLU",
+                "layer_params": {
+                    "negative_slope": 0
+                }
+            },
+            {
+                "layer_name": "block0_pool1",
+                "layer_id": "9b4677e5.854179",
+                "layer_type": "Pooling2D",
+                "layer_params": {
+                    "kernel_row": 3,
+                    "kernel_col": 3,
+                    "stride_row": 2,
+                    "stride_col": 2,
+                    "border_mode": "valid",
+                    "function": "max",
+                    "trainable": true
+                }
+            },
+            {
+                "layer_name": "block1_conv1",
+                "layer_id": "85ee6bac.a21638",
+                "layer_type": "Convolution2D",
+                "layer_params": {
+                    "nb_filter": 64,
+                    "kernel_row": 3,
+                    "kernel_col": 3,
+                    "stride_row": 1,
+                    "stride_col": 1,
+                    "border_mode": "same",
+                    "init": "glorot_normal",
+                    "bias": 0,
+                    "trainable": true,
+                    "W_constraint": "null",
+                    "W_regularizer": "null",
+                    "W_lr_mult": 1,
+                    "w_decay_mult": 1,
+                    "b_constraint": "null",
+                    "b_regularizer": "null",
+                    "b_lr_mult": 1,
+                    "b_decay_mult": 1,
+                    "activity_regularizer": "null"
+                }
+            },
+            {
+                "layer_name": "block1_relu1",
+                "layer_id": "70535737.955358",
+                "layer_type": "ReLU",
+                "layer_params": {
+                    "negative_slope": 0
+                }
+            },
+            {
+                "layer_name": "block1_conv2",
+                "layer_id": "db1623c5.eda22",
+                "layer_type": "Convolution2D",
+                "layer_params": {
+                    "nb_filter": 64,
+                    "kernel_row": 3,
+                    "kernel_col": 3,
+                    "stride_row": 1,
+                    "stride_col": 1,
+                    "border_mode": "same",
+                    "init": "glorot_normal",
+                    "bias": 0,
+                    "trainable": true,
+                    "W_constraint": "null",
+                    "W_regularizer": "null",
+                    "W_lr_mult": 1,
+                    "w_decay_mult": 1,
+                    "b_constraint": "null",
+                    "b_regularizer": "null",
+                    "b_lr_mult": 1,
+                    "b_decay_mult": 1,
+                    "activity_regularizer": "null"
+                }
+            },
+            {
+                "layer_name": "block1_relu2",
+                "layer_id": "89b0233b.4997f",
+                "layer_type": "ReLU",
+                "layer_params": {
+                    "negative_slope": 0
+                }
+            },
+            {
+                "layer_name": "Eltwise_1",
+                "layer_id": "91087d15.d8841",
+                "layer_type": "Eltwise",
+                "layer_params": {
+                    "operation": "SUM"
+                }
+            },
+            {
+                "layer_name": "block1_conv3",
+                "layer_id": "85ee6bac.a21628",
+                "layer_type": "Convolution2D",
+                "layer_params": {
+                    "nb_filter": 64,
+                    "kernel_row": 3,
+                    "kernel_col": 3,
+                    "stride_row": 1,
+                    "stride_col": 1,
+                    "border_mode": "same",
+                    "init": "glorot_normal",
+                    "bias": 0,
+                    "trainable": true,
+                    "W_constraint": "null",
+                    "W_regularizer": "null",
+                    "W_lr_mult": 1,
+                    "w_decay_mult": 1,
+                    "b_constraint": "null",
+                    "b_regularizer": "null",
+                    "b_lr_mult": 1,
+                    "b_decay_mult": 1,
+                    "activity_regularizer": "null"
+                }
+            },
+            {
+                "layer_name": "block1_relu3",
+                "layer_id": "70535737.955338",
+                "layer_type": "ReLU",
+                "layer_params": {
+                    "negative_slope": 0
+                }
+            },
+            {
+                "layer_name": "block1_conv4",
+                "layer_id": "db1623c5.eda24",
+                "layer_type": "Convolution2D",
+                "layer_params": {
+                    "nb_filter": 64,
+                    "kernel_row": 3,
+                    "kernel_col": 3,
+                    "stride_row": 1,
+                    "stride_col": 1,
+                    "border_mode": "same",
+                    "init": "glorot_normal",
+                    "bias": 0,
+                    "trainable": true,
+                    "W_constraint": "null",
+                    "W_regularizer": "null",
+                    "W_lr_mult": 1,
+                    "w_decay_mult": 1,
+                    "b_constraint": "null",
+                    "b_regularizer": "null",
+                    "b_lr_mult": 1,
+                    "b_decay_mult": 1,
+                    "activity_regularizer": "null"
+                }
+            },
+            {
+                "layer_name": "block1_relu4",
+                "layer_id": "89b0233b.4994f",
+                "layer_type": "ReLU",
+                "layer_params": {
+                    "negative_slope": 0
+                }
+            },
+            {
+                "layer_name": "Eltwise_2",
+                "layer_id": "91087d15.d8842",
+                "layer_type": "Eltwise",
+                "layer_params": {
+                    "operation": "SUM"
+                }
+            },
+            {
+                "layer_name": "block2_conv1",
+                "layer_id": "24978658.8e040a",
+                "layer_type": "Convolution2D",
+                "layer_params": {
+                    "nb_filter": 128,
+                    "kernel_row": 3,
+                    "kernel_col": 3,
+                    "stride_row": 2,
+                    "stride_col": 2,
+                    "border_mode": "same",
+                    "init": "glorot_normal",
+                    "bias": 0,
+                    "trainable": true,
+                    "W_constraint": "null",
+                    "W_regularizer": "null",
+                    "W_lr_mult": 1,
+                    "w_decay_mult": 1,
+                    "b_constraint": "null",
+                    "b_regularizer": "null",
+                    "b_lr_mult": 1,
+                    "b_decay_mult": 1,
+                    "activity_regularizer": "null"
+                }
+            },
+            {
+                "layer_name": "block2_relu1",
+                "layer_id": "5eacb3ac.b10d9c",
+                "layer_type": "ReLU",
+                "layer_params": {
+                    "negative_slope": 0
+                }
+            },
+            {
+                "layer_name": "block2_conv2",
+                "layer_id": "f05cd207.1617",
+                "layer_type": "Convolution2D",
+                "layer_params": {
+                    "nb_filter": 128,
+                    "kernel_row": 3,
+                    "kernel_col": 3,
+                    "stride_row": 1,
+                    "stride_col": 1,
+                    "border_mode": "same",
+                    "init": "glorot_normal",
+                    "bias": 0,
+                    "trainable": true,
+                    "W_constraint": "null",
+                    "W_regularizer": "null",
+                    "W_lr_mult": 1,
+                    "w_decay_mult": 1,
+                    "b_constraint": "null",
+                    "b_regularizer": "null",
+                    "b_lr_mult": 1,
+                    "b_decay_mult": 1,
+                    "activity_regularizer": "null"
+                }
+            },
+            {
+                "layer_name": "block2_relu2",
+                "layer_id": "2190ae21.7b5232",
+                "layer_type": "ReLU",
+                "layer_params": {
+                    "negative_slope": 0
+                }
+            },
+            {
+                "layer_name": "Eltwise_3",
+                "layer_id": "91087d15.d8843",
+                "layer_type": "Eltwise",
+                "layer_params": {
+                    "operation": "SUM"
+                }
+            },
+            {
+                "layer_name": "block2_conv3",
+                "layer_id": "24978658.8e043a",
+                "layer_type": "Convolution2D",
+                "layer_params": {
+                    "nb_filter": 128,
+                    "kernel_row": 3,
+                    "kernel_col": 3,
+                    "stride_row": 1,
+                    "stride_col": 1,
+                    "border_mode": "same",
+                    "init": "glorot_normal",
+                    "bias": 0,
+                    "trainable": true,
+                    "W_constraint": "null",
+                    "W_regularizer": "null",
+                    "W_lr_mult": 1,
+                    "w_decay_mult": 1,
+                    "b_constraint": "null",
+                    "b_regularizer": "null",
+                    "b_lr_mult": 1,
+                    "b_decay_mult": 1,
+                    "activity_regularizer": "null"
+                }
+            },
+            {
+                "layer_name": "block2_relu3",
+                "layer_id": "5eacb3ac.b10d93c",
+                "layer_type": "ReLU",
+                "layer_params": {
+                    "negative_slope": 0
+                }
+            },
+            {
+                "layer_name": "block2_conv4",
+                "layer_id": "f05cd207.1647",
+                "layer_type": "Convolution2D",
+                "layer_params": {
+                    "nb_filter": 128,
+                    "kernel_row": 3,
+                    "kernel_col": 3,
+                    "stride_row": 1,
+                    "stride_col": 1,
+                    "border_mode": "same",
+                    "init": "glorot_normal",
+                    "bias": 0,
+                    "trainable": true,
+                    "W_constraint": "null",
+                    "W_regularizer": "null",
+                    "W_lr_mult": 1,
+                    "w_decay_mult": 1,
+                    "b_constraint": "null",
+                    "b_regularizer": "null",
+                    "b_lr_mult": 1,
+                    "b_decay_mult": 1,
+                    "activity_regularizer": "null"
+                }
+            },
+            {
+                "layer_name": "block2_relu4",
+                "layer_id": "2190ae21.7b5234",
+                "layer_type": "ReLU",
+                "layer_params": {
+                    "negative_slope": 0
+                }
+            },
+            {
+                "layer_name": "Eltwise_4",
+                "layer_id": "91087d15.d8844",
+                "layer_type": "Eltwise",
+                "layer_params": {
+                    "operation": "SUM"
+                }
+            },
+            {
+                "layer_name": "block3_conv1",
+                "layer_id": "3675d61b.08fdca",
+                "layer_type": "Convolution2D",
+                "layer_params": {
+                    "nb_filter": 256,
+                    "kernel_row": 3,
+                    "kernel_col": 3,
+                    "stride_row": 2,
+                    "stride_col": 2,
+                    "border_mode": "same",
+                    "init": "glorot_normal",
+                    "bias": 0,
+                    "trainable": true,
+                    "W_constraint": "null",
+                    "W_regularizer": "null",
+                    "W_lr_mult": 1,
+                    "w_decay_mult": 1,
+                    "b_constraint": "null",
+                    "b_regularizer": "null",
+                    "b_lr_mult": 1,
+                    "b_decay_mult": 1,
+                    "activity_regularizer": "null"
+                }
+            },
+            {
+                "layer_name": "block3_relu1",
+                "layer_id": "f85416a5.911638",
+                "layer_type": "ReLU",
+                "layer_params": {
+                    "negative_slope": 0
+                }
+            },
+            {
+                "layer_name": "block3_conv2",
+                "layer_id": "1b79ef36.21ba51",
+                "layer_type": "Convolution2D",
+                "layer_params": {
+                    "nb_filter": 256,
+                    "kernel_row": 3,
+                    "kernel_col": 3,
+                    "stride_row": 1,
+                    "stride_col": 1,
+                    "border_mode": "same",
+                    "init": "glorot_normal",
+                    "bias": 0,
+                    "trainable": true,
+                    "W_constraint": "null",
+                    "W_regularizer": "null",
+                    "W_lr_mult": 1,
+                    "w_decay_mult": 1,
+                    "b_constraint": "null",
+                    "b_regularizer": "null",
+                    "b_lr_mult": 1,
+                    "b_decay_mult": 1,
+                    "activity_regularizer": "null"
+                }
+            },
+            {
+                "layer_name": "block3_relu2",
+                "layer_id": "ba720155.f616e",
+                "layer_type": "ReLU",
+                "layer_params": {
+                    "negative_slope": 0
+                }
+            },
+            {
+                "layer_name": "Eltwise_5",
+                "layer_id": "91087d15.d8845",
+                "layer_type": "Eltwise",
+                "layer_params": {
+                    "operation": "SUM"
+                }
+            },
+            {
+                "layer_name": "block3_conv3",
+                "layer_id": "d7bf1285.1793e",
+                "layer_type": "Convolution2D",
+                "layer_params": {
+                    "nb_filter": 256,
+                    "kernel_row": 3,
+                    "kernel_col": 3,
+                    "stride_row": 1,
+                    "stride_col": 1,
+                    "border_mode": "same",
+                    "init": "glorot_normal",
+                    "bias": 0,
+                    "trainable": true,
+                    "W_constraint": "null",
+                    "W_regularizer": "null",
+                    "W_lr_mult": 1,
+                    "w_decay_mult": 1,
+                    "b_constraint": "null",
+                    "b_regularizer": "null",
+                    "b_lr_mult": 1,
+                    "b_decay_mult": 1,
+                    "activity_regularizer": "null"
+                }
+            },
+            {
+                "layer_name": "block3_relu3",
+                "layer_id": "27dde157.5bd22e",
+                "layer_type": "ReLU",
+                "layer_params": {
+                    "negative_slope": 0
+                }
+            },
+            {
+                "layer_name": "block3_conv4",
+                "layer_id": "244456dc.e773ea",
+                "layer_type": "Convolution2D",
+                "layer_params": {
+                    "nb_filter": 256,
+                    "kernel_row": 3,
+                    "kernel_col": 3,
+                    "stride_row": 1,
+                    "stride_col": 1,
+                    "border_mode": "same",
+                    "init": "glorot_normal",
+                    "bias": 0,
+                    "trainable": true,
+                    "W_constraint": "null",
+                    "W_regularizer": "null",
+                    "W_lr_mult": 1,
+                    "w_decay_mult": 1,
+                    "b_constraint": "null",
+                    "b_regularizer": "null",
+                    "b_lr_mult": 1,
+                    "b_decay_mult": 1,
+                    "activity_regularizer": "null"
+                }
+            },
+            {
+                "layer_name": "block3_relu4",
+                "layer_id": "eba8501b.0bb4d",
+                "layer_type": "ReLU",
+                "layer_params": {
+                    "negative_slope": 0
+                }
+            },
+            {
+                "layer_name": "Eltwise_6",
+                "layer_id": "91087d15.d8846",
+                "layer_type": "Eltwise",
+                "layer_params": {
+                    "operation": "SUM"
+                }
+            },
+            {
+                "layer_name": "block4_conv1",
+                "layer_id": "e16cca39.2c3db8",
+                "layer_type": "Convolution2D",
+                "layer_params": {
+                    "nb_filter": 512,
+                    "kernel_row": 3,
+                    "kernel_col": 3,
+                    "stride_row": 2,
+                    "stride_col": 2,
+                    "border_mode": "same",
+                    "init": "glorot_normal",
+                    "bias": 0,
+                    "trainable": true,
+                    "W_constraint": "null",
+                    "W_regularizer": "null",
+                    "W_lr_mult": 1,
+                    "w_decay_mult": 1,
+                    "b_constraint": "null",
+                    "b_regularizer": "null",
+                    "b_lr_mult": 1,
+                    "b_decay_mult": 1,
+                    "activity_regularizer": "null"
+                }
+            },
+            {
+                "layer_name": "block4_relu1",
+                "layer_id": "d76fcac7.9704c8",
+                "layer_type": "ReLU",
+                "layer_params": {
+                    "negative_slope": 0
+                }
+            },
+            {
+                "layer_name": "block4_conv2",
+                "layer_id": "f7785803.7bb1d8",
+                "layer_type": "Convolution2D",
+                "layer_params": {
+                    "nb_filter": 512,
+                    "kernel_row": 3,
+                    "kernel_col": 3,
+                    "stride_row": 1,
+                    "stride_col": 1,
+                    "border_mode": "same",
+                    "init": "glorot_normal",
+                    "bias": 0,
+                    "trainable": true,
+                    "W_constraint": "null",
+                    "W_regularizer": "null",
+                    "W_lr_mult": 1,
+                    "w_decay_mult": 1,
+                    "b_constraint": "null",
+                    "b_regularizer": "null",
+                    "b_lr_mult": 1,
+                    "b_decay_mult": 1,
+                    "activity_regularizer": "null"
+                }
+            },
+            {
+                "layer_name": "block4_relu2",
+                "layer_id": "d208fb64.541cb8",
+                "layer_type": "ReLU",
+                "layer_params": {
+                    "negative_slope": 0
+                }
+            },
+            {
+                "layer_name": "Eltwise_7",
+                "layer_id": "91087d15.d8847",
+                "layer_type": "Eltwise",
+                "layer_params": {
+                    "operation": "SUM"
+                }
+            },
+            {
+                "layer_name": "block4_conv3",
+                "layer_id": "cfc096c2.a788b8",
+                "layer_type": "Convolution2D",
+                "layer_params": {
+                    "nb_filter": 512,
+                    "kernel_row": 3,
+                    "kernel_col": 3,
+                    "stride_row": 1,
+                    "stride_col": 1,
+                    "border_mode": "same",
+                    "init": "glorot_normal",
+                    "bias": 0,
+                    "trainable": true,
+                    "W_constraint": "null",
+                    "W_regularizer": "null",
+                    "W_lr_mult": 1,
+                    "w_decay_mult": 1,
+                    "b_constraint": "null",
+                    "b_regularizer": "null",
+                    "b_lr_mult": 1,
+                    "b_decay_mult": 1,
+                    "activity_regularizer": "null"
+                }
+            },
+            {
+                "layer_name": "block4_relu3",
+                "layer_id": "3e4510dc.2d6de",
+                "layer_type": "ReLU",
+                "layer_params": {
+                    "negative_slope": 0
+                }
+            },
+            {
+                "layer_name": "block4_conv4",
+                "layer_id": "465a8d51.4258a4",
+                "layer_type": "Convolution2D",
+                "layer_params": {
+                    "nb_filter": 512,
+                    "kernel_row": 3,
+                    "kernel_col": 3,
+                    "stride_row": 1,
+                    "stride_col": 1,
+                    "border_mode": "same",
+                    "init": "glorot_normal",
+                    "bias": 0,
+                    "trainable": true,
+                    "W_constraint": "null",
+                    "W_regularizer": "null",
+                    "W_lr_mult": 1,
+                    "w_decay_mult": 1,
+                    "b_constraint": "null",
+                    "b_regularizer": "null",
+                    "b_lr_mult": 1,
+                    "b_decay_mult": 1,
+                    "activity_regularizer": "null"
+                }
+            },
+            {
+                "layer_name": "block4_relu4",
+                "layer_id": "37a340a0.627f7",
+                "layer_type": "ReLU",
+                "layer_params": {
+                    "negative_slope": 0
+                }
+            },
+            {
+                "layer_name": "Eltwise_8",
+                "layer_id": "91087d15.d8848",
+                "layer_type": "Eltwise",
+                "layer_params": {
+                    "operation": "SUM"
+                }
+            },
+            {
+                "layer_name": "block4_pool1",
+                "layer_id": "9b4677e5.854178",
+                "layer_type": "Pooling2D",
+                "layer_params": {
+                    "kernel_row": 1,
+                    "kernel_col": 1,
+                    "stride_row": 1,
+                    "stride_col": 1,
+                    "border_mode": "valid",
+                    "function": "avg",
+                    "trainable": true
+                }
+            },
+            {
+                "layer_name": "Flatten_99cc08ed",
+                "layer_id": "99cc08ed.beab88",
+                "layer_type": "Flatten",
+                "layer_params": {}
+            },
+            {
+                "layer_name": "fc1",
+                "layer_id": "fbd031b6.ecb78",
+                "layer_type": "Dense",
+                "layer_params": {
+                    "output_dim": 1000,
+                    "init": "glorot_normal",
+                    "bias": 0,
+                    "trainable": true,
+                    "W_constraint": "null",
+                    "W_regularizer": "null",
+                    "W_lr_mult": 1,
+                    "w_decay_mult": 1,
+                    "b_constraint": "null",
+                    "b_regularizer": "null",
+                    "b_lr_mult": 1,
+                    "b_decay_mult": 1,
+                    "activity_regularizer": "null"
+                }
+            },
+            {
+                "layer_name": "CrossEntropyLoss_9e0327fa",
+                "layer_id": "9e0327fa.fe2fb8",
+                "layer_type": "CrossEntropyLoss",
+                "layer_params": {
+                }
+            }
+        ],
+        "neural_flow": {
+            "input_layers": [
+                "77935ab7.93b4b4"
+            ],
+            "output_layers": [
+                "9e0327fa.fe2fb8"
+            ],
+            "layer_links": [
+                {
+                    "from": "77935ab7.93b4b4",
+                    "to": "85ee6bac.a21639"
+                },
+                {
+                    "from": "85ee6bac.a21639",
+                    "to": "70535737.955359"
+                },
+                {
+                    "from": "70535737.955359",
+                    "to": "9b4677e5.854179"
+                },
+                {
+                    "from": "9b4677e5.854179",
+                    "to": "85ee6bac.a21638"
+                },
+                {
+                    "from": "85ee6bac.a21638",
+                    "to": "70535737.955358"
+                },
+                {
+                    "from": "70535737.955358",
+                    "to": "db1623c5.eda22"
+                },
+                {
+                    "from": "db1623c5.eda22",
+                    "to": "89b0233b.4997f"
+                },
+                {
+                    "from": "89b0233b.4997f",
+                    "to": "91087d15.d8841"
+                },
+                {
+                    "from": "9b4677e5.854179",
+                    "to": "91087d15.d8841"
+                },
+                {
+                    "from": "91087d15.d8841",
+                    "to": "85ee6bac.a21628"
+                },
+                {
+                    "from": "85ee6bac.a21628",
+                    "to": "70535737.955338"
+                },
+                {
+                    "from": "70535737.955338",
+                    "to": "2db1623c5.eda24"
+                },
+                {
+                    "from": "2db1623c5.eda24",
+                    "to": "89b0233b.4994f"
+                },
+                {
+                    "from": "89b0233b.4994f",
+                    "to": "91087d15.d8842"
+                },
+                {
+                    "from": "91087d15.d8841",
+                    "to": "91087d15.d8842"
+                },
+                {
+                    "from": "91087d15.d8842",
+                    "to": "24978658.8e040a"
+                },
+                {
+                    "from": "24978658.8e040a",
+                    "to": "5eacb3ac.b10d9c"
+                },
+                {
+                    "from": "5eacb3ac.b10d9c",
+                    "to": "f05cd207.1617"
+                },
+                {
+                    "from": "f05cd207.1617",
+                    "to": "2190ae21.7b5232"
+                },
+                {
+                    "from": "2190ae21.7b5232",
+                    "to": "91087d15.d8843"
+                },
+                {
+                    "from": "91087d15.d8842",
+                    "to": "91087d15.d8843"
+                },
+                {
+                    "from": "91087d15.d8843",
+                    "to": "24978658.8e043a"
+                },
+                {
+                    "from": "24978658.8e043a",
+                    "to": "5eacb3ac.b10d93c"
+                },
+                {
+                    "from": "5eacb3ac.b10d93c",
+                    "to": "f05cd207.1647"
+                },
+                {
+                    "from": "f05cd207.1647",
+                    "to": "2190ae21.7b5234"
+                },
+                {
+                    "from": "2190ae21.7b5234",
+                    "to": "91087d15.d8844"
+                },
+                {
+                    "from": "91087d15.d8843",
+                    "to": "91087d15.d8844"
+                },
+                {
+                    "from": "91087d15.d8844",
+                    "to": "3675d61b.08fdca"
+                },
+                {
+                    "from": "3675d61b.08fdca",
+                    "to": "f85416a5.911638"
+                },
+                {
+                    "from": "f85416a5.911638",
+                    "to": "1b79ef36.21ba51"
+                },
+                {
+                    "from": "1b79ef36.21ba51",
+                    "to": "ba720155.f616e"
+                },
+                {
+                    "from": "ba720155.f616e",
+                    "to": "91087d15.d8845"
+                },
+                {
+                    "from": "91087d15.d8844",
+                    "to": "91087d15.d8845"
+                },
+                {
+                    "from": "91087d15.d8845",
+                    "to": "d7bf1285.1793e"
+                },
+                {
+                    "from": "d7bf1285.1793e",
+                    "to": "27dde157.5bd22e"
+                },
+                {
+                    "from": "27dde157.5bd22e",
+                    "to": "244456dc.e773ea"
+                },
+                {
+                    "from": "244456dc.e773ea",
+                    "to": "eba8501b.0bb4d"
+                },
+                {
+                    "from": "eba8501b.0bb4d",
+                    "to": "91087d15.d8846"
+                },
+                {
+                    "from": "91087d15.d8845",
+                    "to": "91087d15.d8846"
+                },
+                {
+                    "from": "91087d15.d8846",
+                    "to": "e16cca39.2c3db8"
+                },
+                {
+                    "from": "e16cca39.2c3db8",
+                    "to": "d76fcac7.9704c8"
+                },
+                {
+                    "from": "d76fcac7.9704c8",
+                    "to": "f7785803.7bb1d8"
+                },
+                {
+                    "from": "f7785803.7bb1d8",
+                    "to": "d208fb64.541cb8"
+                },
+                {
+                    "from": "d208fb64.541cb8",
+                    "to": "91087d15.d8847"
+                },
+                {
+                    "from": "91087d15.d8846",
+                    "to": "91087d15.d8847"
+                },
+                {
+                    "from": "91087d15.d8847",
+                    "to": "cfc096c2.a788b8"
+                },
+                {
+                    "from": "cfc096c2.a788b8",
+                    "to": "3e4510dc.2d6de"
+                },
+                {
+                    "from": "3e4510dc.2d6de",
+                    "to": "465a8d51.4258a4"
+                },
+                {
+                    "from": "465a8d51.4258a4",
+                    "to": "37a340a0.627f7"
+                },
+                {
+                    "from": "37a340a0.627f7",
+                    "to": "91087d15.d8848"
+                },
+                {
+                    "from": "91087d15.d8847",
+                    "to": "91087d15.d8848"
+                },
+                {
+                    "from": "91087d15.d8848",
+                    "to": "9b4677e5.854178"
+                },
+                {
+                    "from": "9b4677e5.854178",
+                    "to": "99cc08ed.beab88"
+                },
+                {
+                    "from": "99cc08ed.beab88",
+                    "to": "fbd031b6.ecb78"
+                },
+                {
+                    "from": "fbd031b6.ecb78",
+                    "to": "9e0327fa.fe2fb8"
+                }
+            ]
+        },
+        "optimizer": {
+            "name": "SGD",
+            "decay": 0.8,
+            "momentum": 0.9,
+            "nesterov": false,
+            "learning_rate": 0.0005
+        },
+        "model_meta": {
+            "model_name": "ResNet",
+            "model_id": "4e1450da.325eb",
+            "hardware": "GPU",
+            "num_epochs": 1,
+            "batch_size": 16,
+            "loss": "SGD",
+            "validations": "The designed model is so lit!",
+            "valid": true
+        }
+    },
+    "ui": {
+        "nodes": [
+            {
+                "id": "4e1450da.325eb",
+                "type": "tab",
+                "label": "ResNet",
+                "layer_type": "TabMetadata"
+            },
+            {
+                "id": "77935ab7.93b4b4",
+                "type": "ImageData",
+                "z": "4e1450da.325eb",
+                "layer_name": "",
+                "layer_type": "ImageData",
+                "data_source": "Custom",
+                "rows": 224,
+                "cols": 224,
+                "channels": 3,
+                "classes": 1000,
+                "dbformat": "Python Pickle",
+                "batchsize": 16,
+                "train_dataset": "/Path_to_traindataset",
+                "test_dataset": "/Path_to_traindataset",
+                "val_dataset": "/Path_to_traindataset",
+                "test_split": 0,
+                "validation_split": null,
+                "dim_ordering": "channels_first",
+                "x": 90.5,
+                "y": 58,
+                "wires": [
+                    [
+                        "85ee6bac.a21638"
+                    ]
+                ]
+            },
+            {
+                "id": "85ee6bac.a21638",
+                "type": "Convolution2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block1_conv1",
+                "nb_filter": 64,
+                "kernel_row": 3,
+                "kernel_col": 3,
+                "stride_row": 1,
+                "stride_col": 1,
+                "border_mode": "same",
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Convolution2D",
+                "x": 274.5,
+                "y": 57,
+                "wires": [
+                    [
+                        "70535737.955358"
+                    ]
+                ]
+            },
+            {
+                "id": "70535737.955358",
+                "type": "ReLU",
+                "z": "4e1450da.325eb",
+                "layer_name": "block1_relu1",
+                "negative_slope": 0,
+                "layer_type": "ReLU",
+                "x": 454.5,
+                "y": 57,
+                "wires": [
+                    [
+                        "db1623c5.eda22"
+                    ]
+                ]
+            },
+            {
+                "id": "db1623c5.eda22",
+                "type": "Convolution2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block1_conv2",
+                "nb_filter": 64,
+                "kernel_row": 3,
+                "kernel_col": 3,
+                "stride_row": 1,
+                "stride_col": 1,
+                "border_mode": "same",
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Convolution2D",
+                "x": 632,
+                "y": 56,
+                "wires": [
+                    [
+                        "89b0233b.4997f"
+                    ]
+                ]
+            },
+            {
+                "id": "89b0233b.4997f",
+                "type": "ReLU",
+                "z": "4e1450da.325eb",
+                "layer_name": "block1_relu2",
+                "negative_slope": 0,
+                "layer_type": "ReLU",
+                "x": 810,
+                "y": 58,
+                "wires": [
+                    [
+                        "9b4677e5.854178"
+                    ]
+                ]
+            },
+            {
+                "id": "9b4677e5.854178",
+                "type": "Pooling2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block1_pool",
+                "kernel_row": 2,
+                "kernel_col": 2,
+                "stride_row": 2,
+                "stride_col": 2,
+                "border_mode": "valid",
+                "function": "max",
+                "trainable": true,
+                "layer_type": "Pooling2D",
+                "x": 985.5,
+                "y": 54,
+                "wires": [
+                    [
+                        "24978658.8e040a"
+                    ]
+                ]
+            },
+            {
+                "id": "24978658.8e040a",
+                "type": "Convolution2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block2_conv1",
+                "nb_filter": 128,
+                "kernel_row": 3,
+                "kernel_col": 3,
+                "stride_row": 1,
+                "stride_col": 1,
+                "border_mode": "same",
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Convolution2D",
+                "x": 273,
+                "y": 175,
+                "wires": [
+                    [
+                        "5eacb3ac.b10d9c"
+                    ]
+                ]
+            },
+            {
+                "id": "5eacb3ac.b10d9c",
+                "type": "ReLU",
+                "z": "4e1450da.325eb",
+                "layer_name": "block2_relu1",
+                "negative_slope": 0,
+                "layer_type": "ReLU",
+                "x": 453,
+                "y": 175,
+                "wires": [
+                    [
+                        "f05cd207.1617"
+                    ]
+                ]
+            },
+            {
+                "id": "f05cd207.1617",
+                "type": "Convolution2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block2_conv2",
+                "nb_filter": 128,
+                "kernel_row": 3,
+                "kernel_col": 3,
+                "stride_row": 1,
+                "stride_col": 1,
+                "border_mode": "same",
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Convolution2D",
+                "x": 630.5,
+                "y": 174,
+                "wires": [
+                    [
+                        "2190ae21.7b5232"
+                    ]
+                ]
+            },
+            {
+                "id": "2190ae21.7b5232",
+                "type": "ReLU",
+                "z": "4e1450da.325eb",
+                "layer_name": "block2_relu2",
+                "negative_slope": 0,
+                "layer_type": "ReLU",
+                "x": 808.5,
+                "y": 176,
+                "wires": [
+                    [
+                        "4cb9c656.1505e8"
+                    ]
+                ]
+            },
+            {
+                "id": "4cb9c656.1505e8",
+                "type": "Pooling2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block2_pool",
+                "kernel_row": 2,
+                "kernel_col": 2,
+                "stride_row": 2,
+                "stride_col": 2,
+                "border_mode": "valid",
+                "function": "max",
+                "trainable": true,
+                "layer_type": "Pooling2D",
+                "x": 984,
+                "y": 172,
+                "wires": [
+                    [
+                        "3675d61b.08fdca"
+                    ]
+                ]
+            },
+            {
+                "id": "3675d61b.08fdca",
+                "type": "Convolution2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block3_conv1",
+                "nb_filter": 256,
+                "kernel_row": 3,
+                "kernel_col": 3,
+                "stride_row": 1,
+                "stride_col": 1,
+                "border_mode": "same",
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Convolution2D",
+                "x": 264,
+                "y": 309,
+                "wires": [
+                    [
+                        "f85416a5.911638"
+                    ]
+                ]
+            },
+            {
+                "id": "f85416a5.911638",
+                "type": "ReLU",
+                "z": "4e1450da.325eb",
+                "layer_name": "block3_relu1",
+                "negative_slope": 0,
+                "layer_type": "ReLU",
+                "x": 444,
+                "y": 309,
+                "wires": [
+                    [
+                        "1b79ef36.21ba51"
+                    ]
+                ]
+            },
+            {
+                "id": "1b79ef36.21ba51",
+                "type": "Convolution2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block3_conv2",
+                "nb_filter": 256,
+                "kernel_row": 3,
+                "kernel_col": 3,
+                "stride_row": 1,
+                "stride_col": 1,
+                "border_mode": "same",
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Convolution2D",
+                "x": 621.5,
+                "y": 308,
+                "wires": [
+                    [
+                        "ba720155.f616e"
+                    ]
+                ]
+            },
+            {
+                "id": "ba720155.f616e",
+                "type": "ReLU",
+                "z": "4e1450da.325eb",
+                "layer_name": "block3_relu2",
+                "negative_slope": 0,
+                "layer_type": "ReLU",
+                "x": 799.5,
+                "y": 310,
+                "wires": [
+                    [
+                        "d7bf1285.1793e"
+                    ]
+                ]
+            },
+            {
+                "id": "56cd8d90.c8ad54",
+                "type": "Pooling2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block3_pool",
+                "kernel_row": 2,
+                "kernel_col": 2,
+                "stride_row": 2,
+                "stride_col": 2,
+                "border_mode": "valid",
+                "function": "max",
+                "trainable": true,
+                "layer_type": "Pooling2D",
+                "x": 982,
+                "y": 436,
+                "wires": [
+                    [
+                        "e16cca39.2c3db8"
+                    ]
+                ]
+            },
+            {
+                "id": "d7bf1285.1793e",
+                "type": "Convolution2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block3_conv3",
+                "nb_filter": 256,
+                "kernel_row": 3,
+                "kernel_col": 3,
+                "stride_row": 1,
+                "stride_col": 1,
+                "border_mode": "same",
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Convolution2D",
+                "x": 263,
+                "y": 435,
+                "wires": [
+                    [
+                        "27dde157.5bd22e"
+                    ]
+                ]
+            },
+            {
+                "id": "27dde157.5bd22e",
+                "type": "ReLU",
+                "z": "4e1450da.325eb",
+                "layer_name": "block3_relu3",
+                "negative_slope": 0,
+                "layer_type": "ReLU",
+                "x": 443,
+                "y": 435,
+                "wires": [
+                    [
+                        "244456dc.e773ea"
+                    ]
+                ]
+            },
+            {
+                "id": "244456dc.e773ea",
+                "type": "Convolution2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block3_conv4",
+                "nb_filter": 256,
+                "kernel_row": 3,
+                "kernel_col": 3,
+                "stride_row": 1,
+                "stride_col": 1,
+                "border_mode": "same",
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Convolution2D",
+                "x": 620.5,
+                "y": 434,
+                "wires": [
+                    [
+                        "eba8501b.0bb4d"
+                    ]
+                ]
+            },
+            {
+                "id": "eba8501b.0bb4d",
+                "type": "ReLU",
+                "z": "4e1450da.325eb",
+                "layer_name": "block3_relu4",
+                "negative_slope": 0,
+                "layer_type": "ReLU",
+                "x": 798.5,
+                "y": 436,
+                "wires": [
+                    [
+                        "56cd8d90.c8ad54"
+                    ]
+                ]
+            },
+            {
+                "id": "e16cca39.2c3db8",
+                "type": "Convolution2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block4_conv1",
+                "nb_filter": 512,
+                "kernel_row": 3,
+                "kernel_col": 3,
+                "stride_row": 1,
+                "stride_col": 1,
+                "border_mode": "same",
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Convolution2D",
+                "x": 268,
+                "y": 565,
+                "wires": [
+                    [
+                        "d76fcac7.9704c8"
+                    ]
+                ]
+            },
+            {
+                "id": "d76fcac7.9704c8",
+                "type": "ReLU",
+                "z": "4e1450da.325eb",
+                "layer_name": "block4_relu1",
+                "negative_slope": 0,
+                "layer_type": "ReLU",
+                "x": 448,
+                "y": 565,
+                "wires": [
+                    [
+                        "f7785803.7bb1d8"
+                    ]
+                ]
+            },
+            {
+                "id": "f7785803.7bb1d8",
+                "type": "Convolution2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block4_conv2",
+                "nb_filter": 512,
+                "kernel_row": 3,
+                "kernel_col": 3,
+                "stride_row": 1,
+                "stride_col": 1,
+                "border_mode": "same",
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Convolution2D",
+                "x": 625.5,
+                "y": 564,
+                "wires": [
+                    [
+                        "d208fb64.541cb8"
+                    ]
+                ]
+            },
+            {
+                "id": "d208fb64.541cb8",
+                "type": "ReLU",
+                "z": "4e1450da.325eb",
+                "layer_name": "block4_relu2",
+                "negative_slope": 0,
+                "layer_type": "ReLU",
+                "x": 803.5,
+                "y": 566,
+                "wires": [
+                    [
+                        "cfc096c2.a788b8"
+                    ]
+                ]
+            },
+            {
+                "id": "22be5b9.61421a4",
+                "type": "Pooling2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block4_pool",
+                "kernel_row": 2,
+                "kernel_col": 2,
+                "stride_row": 2,
+                "stride_col": 2,
+                "border_mode": "valid",
+                "function": "max",
+                "trainable": true,
+                "layer_type": "Pooling2D",
+                "x": 986,
+                "y": 692,
+                "wires": [
+                    [
+                        "6026e765.f0ac58"
+                    ]
+                ]
+            },
+            {
+                "id": "cfc096c2.a788b8",
+                "type": "Convolution2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block4_conv3",
+                "nb_filter": 512,
+                "kernel_row": 3,
+                "kernel_col": 3,
+                "stride_row": 1,
+                "stride_col": 1,
+                "border_mode": "same",
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Convolution2D",
+                "x": 267,
+                "y": 691,
+                "wires": [
+                    [
+                        "3e4510dc.2d6de"
+                    ]
+                ]
+            },
+            {
+                "id": "3e4510dc.2d6de",
+                "type": "ReLU",
+                "z": "4e1450da.325eb",
+                "layer_name": "block4_relu3",
+                "negative_slope": 0,
+                "layer_type": "ReLU",
+                "x": 447,
+                "y": 691,
+                "wires": [
+                    [
+                        "465a8d51.4258a4"
+                    ]
+                ]
+            },
+            {
+                "id": "465a8d51.4258a4",
+                "type": "Convolution2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block4_conv4",
+                "nb_filter": 512,
+                "kernel_row": 3,
+                "kernel_col": 3,
+                "stride_row": 1,
+                "stride_col": 1,
+                "border_mode": "same",
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Convolution2D",
+                "x": 624.5,
+                "y": 690,
+                "wires": [
+                    [
+                        "37a340a0.627f7"
+                    ]
+                ]
+            },
+            {
+                "id": "37a340a0.627f7",
+                "type": "ReLU",
+                "z": "4e1450da.325eb",
+                "layer_name": "block4_relu4",
+                "negative_slope": 0,
+                "layer_type": "ReLU",
+                "x": 802.5,
+                "y": 692,
+                "wires": [
+                    [
+                        "22be5b9.61421a4"
+                    ]
+                ]
+            },
+            {
+                "id": "6026e765.f0ac58",
+                "type": "Convolution2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block5_conv1",
+                "nb_filter": 512,
+                "kernel_row": 3,
+                "kernel_col": 3,
+                "stride_row": 1,
+                "stride_col": 1,
+                "border_mode": "same",
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Convolution2D",
+                "x": 262,
+                "y": 811,
+                "wires": [
+                    [
+                        "d7be2b0.2d06dd8"
+                    ]
+                ]
+            },
+            {
+                "id": "d7be2b0.2d06dd8",
+                "type": "ReLU",
+                "z": "4e1450da.325eb",
+                "layer_name": "block5_relu1",
+                "negative_slope": 0,
+                "layer_type": "ReLU",
+                "x": 442,
+                "y": 811,
+                "wires": [
+                    [
+                        "ad474df8.caab2"
+                    ]
+                ]
+            },
+            {
+                "id": "ad474df8.caab2",
+                "type": "Convolution2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block5_conv2",
+                "nb_filter": 512,
+                "kernel_row": 3,
+                "kernel_col": 3,
+                "stride_row": 1,
+                "stride_col": 1,
+                "border_mode": "same",
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Convolution2D",
+                "x": 619.5,
+                "y": 810,
+                "wires": [
+                    [
+                        "1be7bf0e.339b81"
+                    ]
+                ]
+            },
+            {
+                "id": "1be7bf0e.339b81",
+                "type": "ReLU",
+                "z": "4e1450da.325eb",
+                "layer_name": "block5_relu2",
+                "negative_slope": 0,
+                "layer_type": "ReLU",
+                "x": 797.5,
+                "y": 812,
+                "wires": [
+                    [
+                        "47ce4dc3.278a84"
+                    ]
+                ]
+            },
+            {
+                "id": "45bc226c.1b8fec",
+                "type": "Pooling2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block5_pool",
+                "kernel_row": 2,
+                "kernel_col": 2,
+                "stride_row": 2,
+                "stride_col": 2,
+                "border_mode": "valid",
+                "function": "max",
+                "trainable": true,
+                "layer_type": "Pooling2D",
+                "x": 980,
+                "y": 938,
+                "wires": [
+                    [
+                        "99cc08ed.beab88"
+                    ]
+                ]
+            },
+            {
+                "id": "47ce4dc3.278a84",
+                "type": "Convolution2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block5_conv3",
+                "nb_filter": 512,
+                "kernel_row": 3,
+                "kernel_col": 3,
+                "stride_row": 1,
+                "stride_col": 1,
+                "border_mode": "same",
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Convolution2D",
+                "x": 261,
+                "y": 937,
+                "wires": [
+                    [
+                        "88b22b02.053128"
+                    ]
+                ]
+            },
+            {
+                "id": "88b22b02.053128",
+                "type": "ReLU",
+                "z": "4e1450da.325eb",
+                "layer_name": "block5_relu3",
+                "negative_slope": 0,
+                "layer_type": "ReLU",
+                "x": 441,
+                "y": 937,
+                "wires": [
+                    [
+                        "d91ebaf4.a64cb8"
+                    ]
+                ]
+            },
+            {
+                "id": "d91ebaf4.a64cb8",
+                "type": "Convolution2D",
+                "z": "4e1450da.325eb",
+                "layer_name": "block5_conv4",
+                "nb_filter": 512,
+                "kernel_row": 3,
+                "kernel_col": 3,
+                "stride_row": 1,
+                "stride_col": 1,
+                "border_mode": "same",
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Convolution2D",
+                "x": 618.5,
+                "y": 936,
+                "wires": [
+                    [
+                        "f48936d3.179e88"
+                    ]
+                ]
+            },
+            {
+                "id": "f48936d3.179e88",
+                "type": "ReLU",
+                "z": "4e1450da.325eb",
+                "layer_name": "block5_relu4",
+                "negative_slope": 0,
+                "layer_type": "ReLU",
+                "x": 796.5,
+                "y": 938,
+                "wires": [
+                    [
+                        "45bc226c.1b8fec"
+                    ]
+                ]
+            },
+            {
+                "id": "99cc08ed.beab88",
+                "type": "Flatten",
+                "z": "4e1450da.325eb",
+                "layer_name": "",
+                "layer_type": "Flatten",
+                "x": 441.5,
+                "y": 1045,
+                "wires": [
+                    [
+                        "fbd031b6.ecb78"
+                    ]
+                ]
+            },
+            {
+                "id": "fbd031b6.ecb78",
+                "type": "Dense",
+                "z": "4e1450da.325eb",
+                "layer_name": "fc1",
+                "output_dim": 4096,
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Dense",
+                "x": 613.5,
+                "y": 1043,
+                "wires": [
+                    [
+                        "f5b79f3c.a76a5"
+                    ]
+                ]
+            },
+            {
+                "id": "f5b79f3c.a76a5",
+                "type": "ReLU",
+                "z": "4e1450da.325eb",
+                "layer_name": "relu_fc1",
+                "negative_slope": 0,
+                "layer_type": "ReLU",
+                "x": 783.5,
+                "y": 1043,
+                "wires": [
+                    [
+                        "482fc993.68b058"
+                    ]
+                ]
+            },
+            {
+                "id": "482fc993.68b058",
+                "type": "Dense",
+                "z": "4e1450da.325eb",
+                "layer_name": "fc2",
+                "output_dim": 4096,
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Dense",
+                "x": 617,
+                "y": 1125,
+                "wires": [
+                    [
+                        "bda6b74b.d5da28"
+                    ]
+                ]
+            },
+            {
+                "id": "bda6b74b.d5da28",
+                "type": "ReLU",
+                "z": "4e1450da.325eb",
+                "layer_name": "relu_fc2",
+                "negative_slope": 0,
+                "layer_type": "ReLU",
+                "x": 787,
+                "y": 1125,
+                "wires": [
+                    [
+                        "5c8d9855.365f68"
+                    ]
+                ]
+            },
+            {
+                "id": "5c8d9855.365f68",
+                "type": "Dense",
+                "z": "4e1450da.325eb",
+                "layer_name": "predictions",
+                "output_dim": 1000,
+                "init": "glorot_normal",
+                "bias": 0,
+                "trainable": true,
+                "W_constraint": "null",
+                "W_regularizer": "null",
+                "W_lr_mult": 1,
+                "w_decay_mult": 1,
+                "b_constraint": "null",
+                "b_regularizer": "null",
+                "b_lr_mult": 1,
+                "b_decay_mult": 1,
+                "activity_regularizer": "null",
+                "layer_type": "Dense",
+                "x": 973,
+                "y": 1124,
+                "wires": [
+                    [
+                        "9e0327fa.fe2fb8"
+                    ]
+                ]
+            },
+            {
+                "id": "9e0327fa.fe2fb8",
+                "type": "CrossEntropyLoss",
+                "z": "4e1450da.325eb",
+                "layer_name": "",
+                "layer_type": "CrossEntropyLoss",
+                "x": 1182.5,
+                "y": 1121,
+                "wires": []
+            }
+        ]
+    },
+    "designName": "ResNet",
+    "state": "saved"
+}
